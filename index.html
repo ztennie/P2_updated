@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <style>
+        .wrapper {
+            margin: 0px auto;
+            background-color: antiquewhite;
+                background-image: url(0000.jpg);
+    
+                    
+        }
+
+        .flip-book {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
+            display: none;
+            background-size: cover;
+    
+        
+        }
+
+        .page {
+            padding: 20px;
+            background-color: antiquewhite;
+            color: #785e3a;
+            border: solid 1px #c2b5a3;
+            overflow: hidden;
+        }
+
+        .page .page-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .page .page-content .page-header {
+            height: 30px;
+            font-size: 100%;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .page .page-content .page-image {
+            height: 100%;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        .page .page-content .page-text {
+            height: 100%;
+            flex-grow: 1;
+            font-size: 80%;
+            text-align: justify;
+            margin-top: 10px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            border-top: solid 1px #f4e8d7;
+            
+        }
+
+        .page .page-content .page-footer {
+            height: 30px;
+            border-top: solid 1px #f4e8d7;
+            font-size: 80%;
+            color: #998466;
+        }
+
+        .page.--left {
+            border-right: 0;
+            box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+        }
+
+        .page.--right {
+            border-left: 0;
+            box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+        }
+
+        .page.--right .page-footer {
+            text-align: right;
+        }
+
+        .page.hard {
+            background-color: #f2e8d9;
+            border: solid 1px #998466;
+        }
+
+        .page.page-cover {
+            background-color: #e3d0b5;
+            color: #785e3a;
+            border: solid 1px #998466;
+        }
+
+        .page.page-cover h2 {
+            text-align: center;
+            padding-top: 50%;
+            font-size: 210%;
+        }
+
+        .page.page-cover.page-cover-top {
+            box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .page.page-cover.page-cover-bottom {
+            box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), 10px 0 8px 0px rgba(0, 0, 0, 0.4);
+        }
+
+    </style>
+</head>
+  <div class="css-script-center">
+  </div>
+</div>
+  <div class="wrapper">
+<body>
+
+
+    <div class="container">
+        <div class="flip-book" id="demoBookExample">
+            <div class="page page-cover page-cover-top" data-density="hard">
+                <div class="page-content">
+                    <div class="image">
+            <img src="coverimagebigger.png" draggable="true" style="width: 70%; max-width: 70%;position: relative; top: 200px;mix-blend-mode: darken;">
+                         <img src="constellations2.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: -300px; z-index: 1;">
+                         
+                    
+                    <embed src="" type="audio/mp3" autostart="true" hidden="true">
+                    <audio id="player" autoplay hidden>
+                        <source src="" type="audio/mp3">
+                    </audio>
+                    </embed>
+                
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="page-header"></h2>
+                    <style type="text/css">
+                        .image {
+                            text-align: center;
+                        }
+                    </style>
+                    <embed src="ringrosie.mp3" type="audio/mp3" autostart="true" hidden="true">
+                    <audio id="player" autoplay hidden>
+                        <source src="ringrosie_final.mp3" type="audio/mp3">
+                    </audio>
+                    </embed>
+                    <div class="image">
+            <img src="poem1brown.png" draggable="true" style="width: 100%; max-width: 100%; height: auto;text-align: center;">
+                    
+                        <br>
+                        <br>
+                    </div>
+                    <div class="page-footer"></div>
+                </div>
+            </div>
+            <!-- PAGES .... -->
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="page-header"></h2>
+                     <div class="image">
+                        <img src="wordserased1stgifshorter.gif" draggable="true" style="width: 100%; max-width: 100%; height: auto;text-align: center;">
+    </div>
+                    
+            <div class="page-footer"></div>
+                </div>
+            </div>
+           <div class="page">
+                <div class="page-content">
+                    <h2 class="page-header"></h2>
+                     <div class="image">
+                         <img src="inthelongago.png" draggable="true" style="width: 100%; max-width: 100%; height: auto;text-align: center;">
+                         <img src="census.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: -150px; z-index: 1;"></div>
+                    
+            <div class="page-footer"></div>
+                </div>
+         <div class="page">
+                <div class="page-content">
+                    <h2 class="page-header"></h2>
+                     <div class="image">
+                        <img src="poem2blue2.png" draggable="true" style="width: 100%; max-width: 100%; height: auto;text-align: center;"> </div>
+                    
+            <div class="page-footer"></div>
+                </div>
+                 
+             <div class="page">
+                <div class="page-content">
+                    <h2 class="page-header"></h2>
+                     <div class="image">
+                          <img src="bonessingle.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: -20px; z-index: 1;"></div>
+                        <img src="poem2longagonowords.gif" style="width: 100%; max-width: 100%; height: 100; position: relative; top: -150px; z-index: 1;"> </div>
+                            <div class="page-footer"></div>
+                    
+                    <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <div class="page-image" style="background-image: url(bonepageimage.png)"></div>
+                        <div class="page-footer"></div>
+                        
+                        <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <div class="image">
+                          <img src="clamour_poem3_2.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 100px; z-index: 1;mix-blend-mode: darken;"></div>
+                        <embed src="Witherspoon.m4a" type="audio/mp3" autostart="true" hidden="true">
+                    <audio id="player" autoplay hidden>
+                        <source src="Witherspoon.m4a" type="audio/mp3">
+                        </audio>
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                    </div>
+                            <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="birdspoem3_2.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 200px; z-index: 1;mix-blend-mode: darken;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                    </div>
+                                <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <h2 class="page-header"></h2>
+                        <img src="just.gif" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 100px; z-index: 1;mix-blend-mode: darken;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                    </div>
+                                    <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="housecollage.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 100px; z-index: 1;mix-blend-mode:darken;mix-blend-mode: darken;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                            </div>
+                        
+                        <div class="page">
+                       
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="gravityofit_smaller.png" style="width: 107%; max-width: 200%; height: 200; position: relative; top: 10px; z-index: 1;mix-blend-mode: darken;">
+                        <img src="halftruthsandmyths.png" style="width: 107%; max-width: 200%; height: 400; position: relative; top: -100px; z-index: 3;mix-blend-mode: darken;">
+                         <img src="constellationsandwildflowers.png" style="width: 105%; max-width: 200%; height: 400; position: relative; top: -200px; z-index: 1;mix-blend-mode: darken;">
+                            </div>
+                            <embed src="Mom2.m4a" type="audio/mp3" autostart="true" hidden="true">
+                    <audio id="player" autoplay hidden>
+                        <source src="Mom2.m4a" type="audio/mp3">
+                        </audio>
+                                        </div>
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                        
+                         <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                <img src="Wateringplants.gif" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 200px; z-index: 1;mix-blend-mode: darken;">
+                        <img src="settleintoit2.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 150px; z-index: 1;mix-blend-mode: darken;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                        
+                         <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                         <img src="hemlocksonthehills.png" style="width: 107%; max-width: 200%; height: 200; position: relative; top: 140px; z-index: 5;mix-blend-mode: darken;">
+                        <img src="birchinthehollow.png" style="width: 107%; max-width: 200%; height: 400; position: relative; top: 150px; z-index: 3;mix-blend-mode: darken;">
+                         <img src="rememberwhatskin.png" style="width: 105%; max-width: 200%; height: 400; position: relative; top: 240px; z-index: 1;mix-blend-mode: darken;">
+                        <img src="tidalcurrents.png" style="width: 105%; max-width: 200%; height: 400; position: relative; top: 250px; z-index: 1;mix-blend-mode: darken;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                         <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                          <img src="moonsmany.png" style="width: 60%; max-width: 60%; height: 100; position: relative; top: 140px; z-index: 1;mix-blend-mode: darken;text-align: center; left: 100px;">
+                       <img src="changeconditions4.png" style="width: 100%; max-width: 200%; height: 400; position: relative; top: 150px; z-index: 1; mix-blend-mode: darken;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                         <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="contradictionor.png" style="width: 110%; max-width: 110%; height: 100; position: relative; top: 100px; z-index: 1;mix-blend-mode: hard-light;">
+                        <img src="grate2.png" style="width: 55%; max-width: 55%; height: 100; position: relative; top: 115px; z-index: 1;mix-blend-mode: darken;text-align: center; left: 110px;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                         <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="accidentora.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 400px; z-index: 1;mix-blend-mode: hard-light;">
+                        <img src="accidentoraimage.png" style="width: 50%; max-width: 50%; height: 100; position: relative; top: 50px; z-index: 1; left: 100px">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                        
+                        <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="oaksgifcropped.gif" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 150px;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                       
+                            <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="butthewind.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 125px;">
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                        
+                        <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <div class="video">  
+  <video width="100%" height="100%" controls style="width:100%; height:100%; top: 250px; padding-top: 225px;">
+    <source src="parkvideo.mp4" type="video/mp4">
+  </video>
+</div>
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                        
+                        <div class="page">
+                    <div class="page-content">
+                        <img src="breathe.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 125px;">
+                        <h2 class="page-header"></h2>
+                        <div class="page-image" style="background-image: url()"></div>
+                        <div class="page-text"></div>
+                        <div class="page-footer"></div>
+                        
+                        <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="bib_new.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 150px; z-index: 1;mix-blend-mode: darken;">
+                        <embed src="Moon_Meets_the_Sun_(getmp3.pro).mp3" type="audio/mp3" autostart="true" hidden="true">
+                    <audio id="player" autoplay hidden>
+                        <source src="Moon_Meets_the_Sun_(getmp3.pro).mp3" type="audio/mp3">
+                    </audio>
+                    </embed>
+                        <div class="page-text">
+        </div>
+                        <div class="page-footer"></div>
+                        
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page page-cover page-cover-bottom" data-density="hard">
+                <div class="page-content">
+                    <img src="finalcollage.png" style="width: 100%; max-width: 100%; height: 100; position: relative; top: 90px; z-index: 1;">
+                    <div class="page">
+                    <div class="page-content">
+                        <h2 class="page-header"></h2>
+                        <img src="To%20forget%20To%20stay%20wild%20Ascended%20but%20still%20armored%20%20careful,%20a%20g.png" style="width: 75%; max-width: 75%; height: 300; position: absolute; top: 90px; z-index: 1; max-width: 100%; height: 100; position: relative; top: 50px; z-index: 1; left:50px">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@0.4.3/dist/js/page-flip.browser.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const pageFlip = new St.PageFlip(
+                document.getElementById("demoBookExample"), {
+                    width: 550, // base width
+                    height: 733, //page height
+
+                    size: "stretch",
+                    // set threshold values:
+                    minWidth: 315,
+                    maxWidth: 1000,
+                    minHeight: 420,
+                    maxHeight: 1350,
+
+                    maxShadowOpacity: 0.5, // Half shadow intensity
+                    showCover: true,
+                    mobileScrollSupport: false // disable content scrolling on mobile devices
+                }
+            );
+
+            // load the pages
+            pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+
+            document.querySelector(".page-total").innerText = pageFlip.getPageCount();
+            document.querySelector(
+                ".page-orientation"
+            ).innerText = pageFlip.getOrientation();
+
+            document.querySelector(".btn-prev").addEventListener("click", () => {
+                pageFlip.flipPrev(); // Turn to the previous page (with animation)
+            });
+
+            document.querySelector(".btn-next").addEventListener("click", () => {
+                pageFlip.flipNext(); // Turn to the next page (with animation)
+            });
+
+            // triggered by page turning
+            pageFlip.on("flip", (e) => {
+                document.querySelector(".page-current").innerText = e.data + 1;
+            });
+
+            // triggered when the state of the book changes
+            pageFlip.on("changeState", (e) => {
+                document.querySelector(".page-state").innerText = e.data;
+            });
+
+            // triggered when page orientation changes
+            pageFlip.on("changeOrientation", (e) => {
+                document.querySelector(".page-orientation").innerText = e.data;
+            });
+        });
+
+    </script>
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
+                method: 'HEAD',
+                mode: 'no-cors'
+            })).then(function(response) {
+                return true;
+            }).catch(function(e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-46156385-1', 'cssscript.com');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+
+</html>
